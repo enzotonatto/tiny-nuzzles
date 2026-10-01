@@ -10,7 +10,6 @@ class: home
   <img src="{{ '/assets/icon.png' | relative_url }}" alt="Ícone do Tiny Nuzzles">
   <h1>Tiny Nuzzles</h1>
   <p class="tagline">Recados de voz entre a criança, no Apple Watch, e a família, no iPhone. Ela não precisa saber ler: ouve e responde com um toque.</p>
-  <span class="badge">Em breve na App Store</span>
 </section>
 
 <section class="cards">

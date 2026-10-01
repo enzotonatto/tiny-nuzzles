@@ -10,7 +10,6 @@ class: home
   <img src="{{ '/assets/icon.png' | relative_url }}" alt="Tiny Nuzzles icon">
   <h1>Tiny Nuzzles</h1>
   <p class="tagline">Voice messages between a child on Apple Watch and their family on iPhone. No reading required: they listen and reply with a single tap.</p>
-  <span class="badge">Coming soon to the App Store</span>
 </section>
 
 <section class="cards">
