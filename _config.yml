@@ -1,0 +1,5 @@
+title: Tiny Nuzzles
+baseurl: /tiny-nuzzles
+url: https://enzotonatto.github.io
+markdown: kramdown
+exclude: [README.md]

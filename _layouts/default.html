@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}Tiny Nuzzles</title>
+  <meta name="description" content="{% if page.lang == 'en' %}Voice messages between kids on Apple Watch and their family on iPhone.{% else %}Recados de voz entre a criança no Apple Watch e a família no iPhone.{% endif %}">
+  <link rel="icon" href="{{ '/assets/icon.png' | relative_url }}">
+  <link rel="apple-touch-icon" href="{{ '/assets/icon.png' | relative_url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  {% if page.lang == 'en' %}{% assign home = '/en/' %}{% assign support = '/en/support/' %}{% assign privacy = '/en/privacy/' %}
+  {% else %}{% assign home = '/' %}{% assign support = '/suporte/' %}{% assign privacy = '/privacidade/' %}{% endif %}
+  <header class="top">
+    <a class="brand" href="{{ home | relative_url }}"><img src="{{ '/assets/icon.png' | relative_url }}" alt="" width="36" height="36">Tiny Nuzzles</a>
+    <nav>
+      <a href="{{ support | relative_url }}">{% if page.lang == 'en' %}Support{% else %}Suporte{% endif %}</a>
+      <a href="{{ privacy | relative_url }}">{% if page.lang == 'en' %}Privacy{% else %}Privacidade{% endif %}</a>
+      <a class="lang" href="{{ page.alt | relative_url }}" hreflang="{% if page.lang == 'en' %}pt-BR{% else %}en{% endif %}">{% if page.lang == 'en' %}PT{% else %}EN{% endif %}</a>
+    </nav>
+  </header>
+  <main class="{{ page.class | default: 'prose' }}">
+    {{ content }}
+  </main>
+  <footer>
+    <p>© 2026 Tiny Nuzzles · <a href="mailto:enzotonatto@gmail.com">enzotonatto@gmail.com</a></p>
+  </footer>
+</body>
+</html>
